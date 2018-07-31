@@ -1,0 +1,71 @@
+.input-text-1{
+	height:100%;
+	width:100%;
+}
+.input-text-1>.additional{
+	position: relative;
+	top:50%;
+	height:50%;
+	z-index: 0;
+	font-size: 1rem;
+	color:#8A7979;
+}
+.additional-s{
+	animation: additional-s 0.2s;
+	animation-fill-mode:forwards;
+}
+@keyframes additional-s
+{
+from {top:50%;font-size: 1rem;}
+to {top:10%;font-size: 0.8rem;}
+}
+
+.input-text-1>input{
+	position: relative;
+	z-index: 1
+	height:50%;
+	border:0;
+	border-bottom:1px solid #988A8A;
+	outline:none;
+	color:#38A0E4;
+	width:100%;
+	font-size: 1rem;
+	background-color:transparent
+}
+.input-text-1>input:focus{ 
+	border-bottom:1px solid #87B5EA;
+}
+.input-text-1>input:hover{
+	border-bottom:1px solid #8CA75E;
+}
+
+
+.input-text-2{
+	height:100%;
+	width:100%;
+	text-align: center;
+}
+.input-text-2>.ys{
+	color:#fff;
+	font-size:1rem;
+	text-align: center;
+	height:100%;
+	width:70%;
+	border:1px solid #fff;
+	background-color:#008FC5;
+	outline:none;
+	border-radius: 0.5rem;
+	transition: width 0.3s,background-color 0.3s,color 0.3s;
+	margin:0 auto;
+}
+.input-text-2>.ys::-webkit-input-placeholder{
+	color:#fff;
+}
+.input-text-2>.ys:hover{
+	background-color:#35D0F5;
+}
+.input-text-2>.ys:focus{ 
+	width:100%;
+	background-color:#fff;
+	color:#008FC5;
+}
