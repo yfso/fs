@@ -8,7 +8,7 @@ import 'iview/dist/styles/iview.css'
 import router from './router'
 
 Vue.config.productionTip = false
-Vue.use(iView)
+Vue.use(iView,{transfer:true})
 
 axios.defaults.baseURL = 'http://api.fs.com';
 // axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
@@ -18,6 +18,8 @@ router.beforeEach((to, from, next) => {
 	if(to.path!='/login'){
 		if((sessionStorage.getItem('yftoken')==null)||(sessionStorage.getItem('yftoken')=='')){
 			router.replace('/login');
+		}else{
+			next()
 		}
 	}else{
 		next()

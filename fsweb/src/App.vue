@@ -5,13 +5,20 @@
 </template>
 
 <script>
+
 export default {
-  name: 'App'
+  name: 'App',
+  data(){
+    return {     
+
+    }
+  },
 }
 </script>
 
 <style>
 *{margin:0;padding:0;}
+html,body{height:100%;width:100%;}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   width:100%;
